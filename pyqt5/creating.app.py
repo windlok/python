@@ -1,7 +1,9 @@
 import sys
-#sys modülü, Python'un standart kütüphanesinde bulunan bir modüldür ve Python programlarının çalışma ortamı hakkında bilgi sağlar. sys.argv, komut satırından geçirilen argümanları içeren bir liste olarak kullanılır. Bu, PyQt5 uygulamasının başlatılması sırasında komut satırından argümanlar almasına olanak tanır.
+#sys modülü, Python'un standart kütüphanesinde bulunan bir modüldür ve Python programlarının çalışma ortamı hakkında bilgi sağlar.
+# sys.argv, komut satırından geçirilen argümanları içeren bir liste olarak kullanılır. Bu, PyQt5 uygulamasının başlatılması sırasında komut satırından argümanlar almasına olanak tanır.
 from PyQt5 import QtWidgets
-#PyQt5, Python programlama dili için bir grafik kullanıcı arayüzü (GUI) kütüphanesidir. PyQt5, Qt framework'ünün Python bağlamasıdır ve Python geliştiricilerine Qt'nin güçlü özelliklerini kullanarak GUI uygulamaları oluşturma imkanı sağlar.
+#PyQt5, Python programlama dili için bir grafik kullanıcı arayüzü (GUI) kütüphanesidir. 
+# PyQt5, Qt framework'ünün Python bağlamasıdır ve Python geliştiricilerine Qt'nin güçlü özelliklerini kullanarak GUI uygulamaları oluşturma imkanı sağlar.
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow , QToolTip
 #QApplication, QWidget, QMainWindow ve QToolTip sınıflarını PyQt5.QtWidgets modülünden içe aktarır. Bu sınıflar, PyQt5 uygulamalarında sıklıkla kullanılan temel bileşenlerdir.
 from PyQt5.QtGui import QIcon
