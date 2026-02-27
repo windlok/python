@@ -5,28 +5,21 @@ from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow , QToolTip
 from MainWindow import Ui_MainWindow
 from dron import dron
 import random
-d=dron("dji",10)
+# remove global drone instance; will be created after UI is ready
 
 class App(QtWidgets.QMainWindow,Ui_MainWindow):
     def __init__(self):
         super().__init__()
-        
-        self.ui=Ui_MainWindow()
+
+        self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.ui.sistemi_baslat.clicked.connect(
-            lambda: (d.ucus_basla, self.baslat())
-        )
-        self.ui.sistemi_durdur.clicked.connect(d.ucus_durdur)
+        # create drone with a reference to the UI so it can update widgets
+        self.d = dron("dji", 10, ui=self.ui)
 
-    def baslat(self):
-        sayi=[]
-        for i in range(50):
-            sayi.append(random.randint(1,5000))
-            time.sleep(0.8)
-            self.ui.lbl_irtifa.insertPlainText(str(sayi[i])+"\n")
+        self.ui.sistemi_baslat.clicked.connect(self.d.ucus_basla)
+        self.ui.sistemi_durdur.clicked.connect(self.d.ucus_durdur)
+        
 
-    def durdur(self):
-        d.ucus_durdur()
         
 application = QtWidgets.QApplication(sys.argv)
 window =App()

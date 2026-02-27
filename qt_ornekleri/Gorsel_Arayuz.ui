@@ -181,31 +181,28 @@
      <string>Dronun Pil</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QSplitter" name="splitter">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>20</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>dron:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="l_dronid">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
       <y>30</y>
-      <width>47</width>
+      <width>114</width>
       <height>13</height>
      </rect>
     </property>
-    <property name="text">
-     <string/>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
     </property>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>dron:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="l_dronid">
+     <property name="text">
+      <string>dron ucmaya hazir</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
