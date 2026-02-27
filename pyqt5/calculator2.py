@@ -39,4 +39,4 @@ class App(QtWidgets.QMainWindow, Ui_MainWindow):
 application = QtWidgets.QApplication(sys.argv)
 window = App()
 window.show()
-sys.exit(application.exec_())        
+sys.exit(application.exec_())
