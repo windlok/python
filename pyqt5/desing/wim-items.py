@@ -5,6 +5,8 @@ from PyQt5.QtGui import QIcon
 
 # MyWindow sınıfı, QMainWindow sınıfından türetilmiş bir sınıftır. 
 # Bu sınıf, PyQt5 uygulamasında kullanılacak ana pencereyi temsil eder.
+#neden mywindows içine QmainWindow sınıfını dahil ediyoruz? 
+# Çünkü MyWindow sınıfı, QMainWindow'un tüm özelliklerini ve işlevselliğini miras alır.
 class MyWindow(QMainWindow):
     # __init__() metodu, MyWindow sınıfının yapıcı (constructor) metodudur. 
     # Bu metod, MyWindow sınıfından bir nesne oluşturulduğunda otomatik olarak çağrılır ve pencerenin temel özelliklerini ayarlar.
