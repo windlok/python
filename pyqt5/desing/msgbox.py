@@ -13,7 +13,7 @@ class MainWindow(QMainWindow):
         self.ui.btn_exit.clicked.connect(self.showDialog)
 
     def showDialog(self):
-        #
+        #tek satırda bütün işlemi yaparız
         result = QMessageBox.question(self,'close application','are you sure',QMessageBox.Ok | QMessageBox.Cancel)
         if result == QMessageBox.Ok:
             print("yes clicked")
