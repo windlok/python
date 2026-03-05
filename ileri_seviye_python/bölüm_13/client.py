@@ -13,6 +13,6 @@ client_socket.connect((HOST, PORT))
 #gelen mesajı almak için kullanıyoruz. 1024 byte kadar veri alabiliriz.
 message = client_socket.recv(1024).decode('utf-8')
 
-print("Serverdan gelen mesaj:", message.decode('utf-8'))
+print("Serverdan gelen mesaj:", message)
 
 client_socket.close()
