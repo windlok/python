@@ -27,8 +27,14 @@ sayilar = [1, 2, 3, 4, 5]
 #senkron çalıştırma için bu şekilde yapabiliriz
 t = time.time()
 
-#asenkron çalıştırma için threading kullanarak yapabiliriz
-t1 = threading.Thread(target=calculate_square, args=(sayilar,))
+# calculate_square(sayilar)
+# calculate_cube(sayilar)
+
+print(f"geçen süre: {time.time() - t} saniye")
+
+#senkron çalıştırma için threading kullanarak yapabiliriz
+t1 = threading.Thread(target=calculate_square, args=(sayilar,)) 
+#işlem parcacığıdır, target parametresi ile çalıştırmak istediğimiz fonksiyonu belirtiyoruz, args parametresi ile fonksiyona göndermek istediğimiz argümanları belirtiyoruz
 t2 = threading.Thread(target=calculate_cube, args=(sayilar,))
 
 #thread'leri başlatmak için start() metodunu kullanırız
