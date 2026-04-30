@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "apple5s",
+    "price": 500,
+    "rating": 4.5,
+    "category": "telefon",
+    "colors": [
+      "red",
+      "blue",
+      "black"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "samsung s20",
+    "price": 1000,
+    "rating": 4.7,
+    "category": "telefon",
+    "colors": [
+      "red",
+      "blue",
+      "black"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "macbook pro",
+    "price": 1299,
+    "rating": 4.5,
+    "category": "laptop",
+    "colors": [
+      "red",
+      "blue",
+      "black"
+    ]
+  }
+]

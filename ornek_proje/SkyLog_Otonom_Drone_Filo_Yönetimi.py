@@ -1,5 +1,3 @@
-
-
 class Drone:
     def __init__(self,drone_id,max_kapasite):
         self.drone_id=drone_id
