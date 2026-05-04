@@ -1,0 +1,35 @@
+{
+  "users": {
+    "mustafatastay": {
+      "firstname": "mustafa",
+      "lastname": "tastay"
+    },
+    "mehmettastay": {
+      "firstname": "mehmet",
+      "lastname": "tastay"
+    },
+    "ayse": {
+      "firstname": "ayse",
+      "lastname": "tastay",
+      "age": 25
+    }
+  },
+  "products": {
+    "1": {
+      "title": "asus laptop",
+      "price": 999
+    },
+    "2": {
+      "title": "lenovo laptop",
+      "price": 899
+    },
+    "3": {
+      "title": "macbook",
+      "price": 1299
+    },
+    "4": {
+      "title": "moster laptop",
+      "price": 1299
+    }
+  }
+}

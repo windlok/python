@@ -34,17 +34,5 @@
       "blue",
       "black"
     ]
-  },
-  {
-    "id": 5,
-    "title": "asus laptop",
-    "price": 999,
-    "rating": 4.4,
-    "category": "laptop",
-    "colors": [
-      "red",
-      "blue",
-      "black"
-    ]
   }
 ]

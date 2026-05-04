@@ -56,7 +56,13 @@ data2= {
 with open("products.json") as file:
     producks = json.load(file)
 
-producks.append(data2)
+for i in data2:
+    if i["title"] == "asus laptop":
+        print("bu ürün zaten var")
+        i["title"] = "lenovo laptop 2024"
+producks.remove(producks[1])
+
+# producks.append(data2)
 
 with open("products.json","w",encoding="utf-8") as file:
     json.dump(producks,file,ensure_ascii=False,indent=2)
